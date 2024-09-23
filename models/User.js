@@ -3,6 +3,7 @@ import { DataTypes } from 'sequelize'; // The library provides an object to help
 import sequelize from '../db/index.js'; // See we needed this
 
 // Define the User model
+//making it lowercase will make our lives easier later on
 const User = sequelize.define('user', {
     // Model attributes are defined here
     firstName: {
@@ -19,6 +20,6 @@ const User = sequelize.define('user', {
     },
 });
 
-// User.sync(); // Check the block about Model synchronization
+User.sync(); // Check the block about Model synchronization
 
 export default User;
