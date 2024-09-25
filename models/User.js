@@ -20,6 +20,6 @@ const User = sequelize.define('user', {
     },
 });
 
-User.sync(); // Check the block about Model synchronization
+// User.sync(); // Check the block about Model synchronization
 
 export default User;
